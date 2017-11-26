@@ -1,0 +1,156 @@
+graph {
+
+subgraph {
+    eg [label="Elżbieta z d. Cichoń \n+\n Grzegorz Dulewicz"]
+
+    md [label="Marysia Dulewicz"]
+    zd [label="Zuzia Dulewicz"]
+    sd [label="Stasiu Dulewicz"]
+
+    md -- eg;
+    zd -- eg;
+    sd -- eg;
+}
+
+subgraph {
+
+   ds [label="Danuta z d. Jadwińska \n+\n Stanisław Cichoń"]
+
+    żr -- ds;
+    eg -- ds;
+    mm -- ds;  
+
+}
+
+subgraph {
+
+    lz [label="Lucyna z d. Trot \n+\n Zygmunt Dulewicz"]
+
+    kr -- lz;
+    eg -- lz;
+}
+subgraph {
+
+   żr [label="żona \n+\n Robert Cichoń"]
+
+   rac [label="Rafał Cichoń"]
+   wc [label="Weronika Cichoń"]
+   ac [label="Antek Cichoń"]
+   hc [label="Hania Cichoń"]
+
+    rac -- żr
+    wc -- żr
+    ac -- żr
+    hc -- żr
+}
+subgraph {   
+   
+  mm [label="Monika z d. Cichoń \n+\n Martin Fritz"]
+}
+subgraph{
+   kr [label="Kasia z d. Dulewicz \n+ \n Rafał Mucha"]
+
+   dm [label="Dawid Mucha"]
+
+   dm -- kr 
+}
+
+subgraph {
+    ht [label="??? \n+\n Henryk Trot"]
+
+    lz -- ht
+    bm -- ht
+}
+
+subgraph{
+
+    bm [label="Barbara z d. Trot \n+\n Sławomir Makarewicz"]
+
+    1 [label="Ewelina Makarewicz"]
+    2 [label="Tomasz Makarewicz"]
+
+    1 -- bm
+    2 -- bm
+}
+
+
+subgraph{
+
+   ws [label="Weronika z d. Wickiewicz \n+\n Stanisław Dulewicz"]
+
+   hd [label="Helena Dulewicz"]
+   kad [label="Stanisław Dulewicz"]
+   
+    hd -- ws
+    kad -- ws 
+    lz -- ws
+}
+
+
+subgraph{
+
+   mdjl [label="Maria z d. Dulewicz \n+\n Jan Leśniak"]
+
+   mdjl -- ws
+   mdl -- mdjl
+   idl -- mdjl
+}
+
+subgraph{
+
+    mdl [label="Magdalena z d. ??? \n+\n Dariusz Leśniak"]
+}
+
+subgraph{
+
+    idl [label="Iwona z d. ??? \n+\n Dariusz Leśniak"]
+
+    1 [label="Szymon Leśniak"]
+}
+
+subgraph{
+
+   mj [label="Marcela z d. Sosnowska \n+\n Józef Jadwiński"]
+
+  
+   maj [label="Marzena Jadwińska"]
+
+    mja -- mj
+    ds -- mj
+    maj -- mj
+}
+
+subgraph{
+   
+   jm [label="Janina z d. ??? \n+\n mąż ???"]
+
+   kc [label="Krystyna Cichoń"]
+    
+    ds -- jm
+    kc -- jm
+    jk -- jm 
+}
+
+subgraph{
+
+   jk [label="Kasia z d. ??? \n+\n Janusz Cichoń"]
+
+   jaj [label="Janusz Cichoń"]
+   arc [label="Arek Cichoń"]
+
+    jaj -- jk
+    arc -- jk
+}
+
+subgraph{
+
+   mja [label="Małgorzata z d. ??? \n+\n Janusz Jadwiński"]
+
+  mrj[label="Marcela Jadwińska"]
+  mgj [label="Magdalena Jadwińska"]
+   
+   mrj -- mja
+   mgj -- mja
+}
+
+}
