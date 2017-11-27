@@ -1,15 +1,16 @@
 graph {
 
-    rankdir = LR;
-    node [shape=plaintext]
-    edge []
-
+    rankdir = BT;
+    //bgcolor=transparent
+    node [shape=plaintext color="#99ccff" style=filled fontcolor=black]
+    edge [penwidth=10 color="#00ff11"]
+    
 subgraph{
 
-    bm [label="Barbara z d. Trot \n+\n Sławomir Makarewicz" shape=doubleoctagon]
+    bm [label="Barbara \n z d. Trot \n+\n Sławomir \n Makarewicz" shape=doubleoctagon]
 
-    bm_1 [label="Ewelina Makarewicz"]
-    bm_2 [label="Tomasz Makarewicz"]
+    bm_1 [label="Ewelina \n Makarewicz"]
+    bm_2 [label="Tomasz \n Makarewicz"]
 
     bm_1 -- bm
     bm_2 -- bm
@@ -18,11 +19,11 @@ subgraph{
     
 
 subgraph {
-    eg [label="Elżbieta z d. Cichoń \n+\n Grzegorz Dulewicz" shape=doubleoctagon style=filled color=lightgrey]
+    eg [label="Elżbieta \n z d. Cichoń \n+\n Grzegorz \n Dulewicz" shape=doubleoctagon]
 
-    md [label="Marysia Dulewicz"]
-    zd [label="Zuzia Dulewicz" style=filled color=lightgrey shape=oval]
-    sd [label="Stasiu Dulewicz"]
+    md [label="Marysia \n Dulewicz"]
+    zd [label="Zuzia \n Dulewicz" style=filled color=blue shape=oval]
+    sd [label="Stasiu \n Dulewicz"]
 
     md -- eg;
     zd -- eg;
@@ -31,7 +32,7 @@ subgraph {
 
 subgraph {
 
-   ds [label="Danuta z d. Jadwińska \n+\n Stanisław Cichoń" shape=doubleoctagon style=filled color=lightgrey]
+   ds [label="Danuta \n z d. Jadwińska \n+\n Stanisław \n Cichoń" shape=doubleoctagon] color=blue
 
     żr -- ds;
     eg -- ds;
@@ -41,19 +42,19 @@ subgraph {
 
 subgraph {
 
-    lz [label="Lucyna z d. Trot \n+\n Zygmunt Dulewicz" shape=doubleoctagon style=filled color=lightgrey]
+    lz [label="Lucyna \n z d. Trot \n+\n Zygmunt \n Dulewicz" shape=doubleoctagon]
 
     kr -- lz;
     eg -- lz;
 }
 subgraph {
 
-   żr [label="żona \n+\n Robert Cichoń" shape=doubleoctagon]
+   żr [label="żona \n+\n Robert \n Cichoń" shape=doubleoctagon]
 
-   rac [label="Rafał Cichoń"]
-   wc [label="Weronika Cichoń"]
-   ac [label="Antek Cichoń"]
-   hc [label="Hania Cichoń"]
+   rac [label="Rafał \n Cichoń"]
+   wc [label="Weronika \n Cichoń"]
+   ac [label="Antek \n Cichoń"]
+   hc [label="Hania \n Cichoń"]
 
     rac -- żr
     wc -- żr
@@ -64,20 +65,20 @@ subgraph {
 
 subgraph {   
    
-  mm [label="Monika z d. Cichoń \n+\n Martin Fritz" shape=doubleoctagon]
+  mm [label="Monika \n z d. Cichoń \n+\n Martin \n Fritz" shape=doubleoctagon]
 }
 
 
 subgraph{
-   kr [label="Kasia z d. Dulewicz \n+ \n Rafał Mucha" shape=doubleoctagon]
+   kr [label="Kasia \n z d. Dulewicz \n+ \n Rafał \n Mucha" shape=doubleoctagon]
 
-   dm [label="Dawid Mucha"]
+   dm [label="Dawid \n Mucha"]
 
    dm -- kr 
 }
 
 subgraph {
-    ht [label="Henryka z d. ??? \n+\n Henryk Trot" shape=doubleoctagon]
+    ht [label="Henryka \n z d. ??? \n+\n Henryk \n Trot" shape=doubleoctagon]
 
     lz -- ht
     bm -- ht
@@ -86,10 +87,10 @@ subgraph {
 
 subgraph{
 
-   ws [label="Weronika z d. Wickiewicz \n+\n Stanisław Dulewicz" shape=doubleoctagon]
+   ws [label="Weronika \n z d. Wickiewicz \n+\n Stanisław \n Dulewicz" shape=doubleoctagon]
 
-   hd [label="Helena Dulewicz"]
-   kad [label="Stanisław Dulewicz"]
+   hd [label="Helena \n Dulewicz"]
+   kad [label="Stanisław \n Dulewicz"]
    
     hd -- ws
     kad -- ws 
@@ -99,10 +100,10 @@ subgraph{
 
 subgraph{
 
-    mja [label="Małgorzata z d. ??? \n+\n Janusz Jadwiński" shape=doubleoctagon]
+    mja [label="Małgorzata \n z d. ??? \n+\n Janusz \n Jadwiński" shape=doubleoctagon]
 
-    mgj [label="Magdalena Jadwińska"]
-    mrj [label="Marcela Jadwińska"]
+    mgj [label="Magdalena \n Jadwińska"]
+    mrj [label="Marcela \n Jadwińska"]
    
     mrj -- mja
     mgj -- mja
@@ -112,7 +113,7 @@ subgraph{
 
 subgraph{
 
-   mdjl [label="Maria z d. Dulewicz \n+\n Jan Leśniak" shape=doubleoctagon]
+   mdjl [label="Maria \n z d. Dulewicz \n+\n Jan \n Leśniak" shape=doubleoctagon]
 
    mdjl -- ws
    mdl -- mdjl
@@ -122,25 +123,25 @@ subgraph{
 
 subgraph{
 
-    mdl [label="Magdalena z d. ??? \n+\n Dariusz Leśniak" shape=doubleoctagon]
+    mdl [label="Magdalena \n z d. ??? \n+\n Dariusz \n Leśniak" shape=doubleoctagon]
 }
 
 
 subgraph{
 
-    idl [label="Iwona z d. ??? \n+\n Dariusz Leśniak" shape=doubleoctagon]
+    idl [label="Iwona \n z d. ??? \n+\n Dariusz \n Leśniak" shape=doubleoctagon]
 
-    idl_1 [label="Szymon Leśniak"]
+    idl_1 [label="Szymon \n Leśniak"]
     idl_1 -- idl
 }
 
 
 subgraph{
 
-   mj [label="Marcela z d. Sosnowska \n+\n Józef Jadwiński" shape=doubleoctagon]
+   mj [label="Marcela \n z d. Sosnowska \n+\n Józef \n Jadwiński" shape=doubleoctagon]
 
   
-   maj [label="Marzena Jadwińska"]
+   maj [label="Marzena \n Jadwińska"]
 
     ds -- mj
     maj -- mj
@@ -150,9 +151,9 @@ subgraph{
 
 subgraph{
    
-   jm [label="Janina z d. ??? \n+\n mąż ???" shape=doubleoctagon]
+   jm [label="Janina \n z d. ??? \n+\n mąż ???" shape=doubleoctagon]
 
-   kc [label="Krystyna Cichoń"]
+   kc [label="Krystyna \n Cichoń"]
     
     ds -- jm
     kc -- jm
@@ -162,10 +163,10 @@ subgraph{
 
 subgraph{
 
-   jk [label="Kasia z d. ??? \n+\n Janusz Cichoń" shape=doubleoctagon]
+   jk [label="Kasia \n z d. ??? \n+\n Janusz \n Cichoń" shape=doubleoctagon]
 
-   jaj [label="Janusz Cichoń"]
-   arc [label="Arek Cichoń"]
+   jaj [label="Janusz \n Cichoń"]
+   arc [label="Arek \n Cichoń"]
 
     jaj -- jk
     arc -- jk
