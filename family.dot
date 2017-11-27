@@ -1,10 +1,27 @@
 graph {
 
+    rankdir = LR;
+    node [shape=plaintext]
+    edge []
+
+subgraph{
+
+    bm [label="Barbara z d. Trot \n+\n Sławomir Makarewicz" shape=doubleoctagon]
+
+    bm_1 [label="Ewelina Makarewicz"]
+    bm_2 [label="Tomasz Makarewicz"]
+
+    bm_1 -- bm
+    bm_2 -- bm
+}
+
+    
+
 subgraph {
-    eg [label="Elżbieta z d. Cichoń \n+\n Grzegorz Dulewicz"]
+    eg [label="Elżbieta z d. Cichoń \n+\n Grzegorz Dulewicz" shape=doubleoctagon style=filled color=lightgrey]
 
     md [label="Marysia Dulewicz"]
-    zd [label="Zuzia Dulewicz"]
+    zd [label="Zuzia Dulewicz" style=filled color=lightgrey shape=oval]
     sd [label="Stasiu Dulewicz"]
 
     md -- eg;
@@ -14,7 +31,7 @@ subgraph {
 
 subgraph {
 
-   ds [label="Danuta z d. Jadwińska \n+\n Stanisław Cichoń"]
+   ds [label="Danuta z d. Jadwińska \n+\n Stanisław Cichoń" shape=doubleoctagon style=filled color=lightgrey]
 
     żr -- ds;
     eg -- ds;
@@ -24,14 +41,14 @@ subgraph {
 
 subgraph {
 
-    lz [label="Lucyna z d. Trot \n+\n Zygmunt Dulewicz"]
+    lz [label="Lucyna z d. Trot \n+\n Zygmunt Dulewicz" shape=doubleoctagon style=filled color=lightgrey]
 
     kr -- lz;
     eg -- lz;
 }
 subgraph {
 
-   żr [label="żona \n+\n Robert Cichoń"]
+   żr [label="żona \n+\n Robert Cichoń" shape=doubleoctagon]
 
    rac [label="Rafał Cichoń"]
    wc [label="Weronika Cichoń"]
@@ -43,12 +60,16 @@ subgraph {
     ac -- żr
     hc -- żr
 }
+
+
 subgraph {   
    
-  mm [label="Monika z d. Cichoń \n+\n Martin Fritz"]
+  mm [label="Monika z d. Cichoń \n+\n Martin Fritz" shape=doubleoctagon]
 }
+
+
 subgraph{
-   kr [label="Kasia z d. Dulewicz \n+ \n Rafał Mucha"]
+   kr [label="Kasia z d. Dulewicz \n+ \n Rafał Mucha" shape=doubleoctagon]
 
    dm [label="Dawid Mucha"]
 
@@ -56,27 +77,16 @@ subgraph{
 }
 
 subgraph {
-    ht [label="??? \n+\n Henryk Trot"]
+    ht [label="Henryka z d. ??? \n+\n Henryk Trot" shape=doubleoctagon]
 
     lz -- ht
     bm -- ht
 }
 
-subgraph{
-
-    bm [label="Barbara z d. Trot \n+\n Sławomir Makarewicz"]
-
-    1 [label="Ewelina Makarewicz"]
-    2 [label="Tomasz Makarewicz"]
-
-    1 -- bm
-    2 -- bm
-}
-
 
 subgraph{
 
-   ws [label="Weronika z d. Wickiewicz \n+\n Stanisław Dulewicz"]
+   ws [label="Weronika z d. Wickiewicz \n+\n Stanisław Dulewicz" shape=doubleoctagon]
 
    hd [label="Helena Dulewicz"]
    kad [label="Stanisław Dulewicz"]
@@ -89,40 +99,58 @@ subgraph{
 
 subgraph{
 
-   mdjl [label="Maria z d. Dulewicz \n+\n Jan Leśniak"]
+    mja [label="Małgorzata z d. ??? \n+\n Janusz Jadwiński" shape=doubleoctagon]
+
+    mgj [label="Magdalena Jadwińska"]
+    mrj [label="Marcela Jadwińska"]
+   
+    mrj -- mja
+    mgj -- mja
+}
+
+
+
+subgraph{
+
+   mdjl [label="Maria z d. Dulewicz \n+\n Jan Leśniak" shape=doubleoctagon]
 
    mdjl -- ws
    mdl -- mdjl
    idl -- mdjl
 }
 
+
 subgraph{
 
-    mdl [label="Magdalena z d. ??? \n+\n Dariusz Leśniak"]
+    mdl [label="Magdalena z d. ??? \n+\n Dariusz Leśniak" shape=doubleoctagon]
 }
 
+
 subgraph{
 
-    idl [label="Iwona z d. ??? \n+\n Dariusz Leśniak"]
+    idl [label="Iwona z d. ??? \n+\n Dariusz Leśniak" shape=doubleoctagon]
 
-    1 [label="Szymon Leśniak"]
+    idl_1 [label="Szymon Leśniak"]
+    idl_1 -- idl
 }
 
+
 subgraph{
 
-   mj [label="Marcela z d. Sosnowska \n+\n Józef Jadwiński"]
+   mj [label="Marcela z d. Sosnowska \n+\n Józef Jadwiński" shape=doubleoctagon]
 
   
    maj [label="Marzena Jadwińska"]
 
-    mja -- mj
     ds -- mj
     maj -- mj
+    mja -- mj
 }
+
 
 subgraph{
    
-   jm [label="Janina z d. ??? \n+\n mąż ???"]
+   jm [label="Janina z d. ??? \n+\n mąż ???" shape=doubleoctagon]
 
    kc [label="Krystyna Cichoń"]
     
@@ -131,9 +159,10 @@ subgraph{
     jk -- jm 
 }
 
+
 subgraph{
 
-   jk [label="Kasia z d. ??? \n+\n Janusz Cichoń"]
+   jk [label="Kasia z d. ??? \n+\n Janusz Cichoń" shape=doubleoctagon]
 
    jaj [label="Janusz Cichoń"]
    arc [label="Arek Cichoń"]
@@ -142,15 +171,5 @@ subgraph{
     arc -- jk
 }
 
-subgraph{
-
-   mja [label="Małgorzata z d. ??? \n+\n Janusz Jadwiński"]
-
-  mrj[label="Marcela Jadwińska"]
-  mgj [label="Magdalena Jadwińska"]
-   
-   mrj -- mja
-   mgj -- mja
-}
 
 }
